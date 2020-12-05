@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #FF1744;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.Controller">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #FF1744;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images2/jimmy-fallon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin></ImageView>
+            <Label fx:id="usee_name" text="Nilesh Singh" textFill="#e7e5e5">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF1744;" stylesheets="@../styling/style.css" text="Overview" textFill="#e7e5e5">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images2/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCheckIn" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF1744;" stylesheets="@../styling/style.css" text="CheckIn">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images2/icons8_Open_Envelope_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCheckOut" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF1744;" stylesheets="@../styling/style.css" text="CheckOut">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images2/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnMenus" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF1744;" stylesheets="@../styling/style.css" text="Menus">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images2/icons8_Xbox_Menu_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnPackages" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF1744;" stylesheets="@../styling/style.css" text="Packages">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images2/icons8_Box_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF1744;" stylesheets="@../styling/style.css" text="Settings">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images2/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #FF1744;" stylesheets="@../styling/style.css" text="Sign Out">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images2/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+         <children>
+            <Pane fx:id="pnlCheckIn" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="labeladdvehicle" alignment="TOP_CENTER" layoutX="315.0" layoutY="14.0" prefHeight="35.0" prefWidth="163.0" text="Add Vehicle" textAlignment="CENTER" textFill="WHITE" underline="true" visible="false">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <AnchorPane fx:id="ancpan" layoutX="38.0" layoutY="80.0" prefHeight="448.0" prefWidth="357.0" visible="false">
+                     <children>
+                        <TextField fx:id="ownername" layoutX="14.0" layoutY="29.0" prefHeight="35.0" prefWidth="256.0" promptText="Enter Owner Name" />
+                        <TextField fx:id="contactno" layoutX="14.0" layoutY="74.0" prefHeight="35.0" prefWidth="256.0" promptText="Enter Contact Number" />
+                        <TextField fx:id="vehicleid" layoutX="14.0" layoutY="119.0" prefHeight="35.0" prefWidth="256.0" promptText="Enter Vechicle Id" />
+                        <TextField fx:id="placeid" layoutX="14.0" layoutY="206.0" prefHeight="35.0" prefWidth="256.0" promptText="Enter PlaceId" />
+                        <DatePicker fx:id="datepicker" layoutX="14.0" layoutY="162.0" prefHeight="35.0" prefWidth="256.0" promptText="Enter Date" />
+                        <ComboBox fx:id="vehicletype" editable="true" layoutX="14.0" layoutY="248.0" prefHeight="35.0" prefWidth="256.0" promptText="Vehicle Type" />
+                        <TextField fx:id="time" layoutX="14.0" layoutY="290.0" prefHeight="35.0" prefWidth="256.0" promptText="Enter Time" />
+                        <Button fx:id="btngentoken" layoutX="92.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="35.0" prefWidth="100.0" text="Generate Token" />
+                        <TextField fx:id="slotno" layoutX="14.0" layoutY="333.0" prefHeight="35.0" prefWidth="256.0" promptText="Enter Slot Number" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="ancpan2" layoutX="397.0" layoutY="164.0" minHeight="0.0" minWidth="0.0" prefHeight="259.0" prefWidth="320.0" visible="false">
+                     <children>
+                        <Label alignment="TOP_CENTER" layoutX="23.0" layoutY="79.0" prefHeight="42.0" prefWidth="205.0" style="-fx-border-radius: 77;" text="Token Generated!!" textFill="#f29616">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labeltoken" alignment="TOP_CENTER" layoutX="58.0" layoutY="121.0" prefHeight="27.0" prefWidth="134.0" text="Label" textFill="#23cbd9">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnok" layoutX="88.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="75.0" text="OK" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Pane fx:id="pnlCheckOut" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="labelcheckout" alignment="TOP_CENTER" layoutX="362.0" layoutY="22.0" prefHeight="27.0" prefWidth="127.0" text="Check Out" textFill="#9201f2" visible="false">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="checkoutpane" layoutX="39.0" layoutY="134.0" prefHeight="400.0" prefWidth="730.0" visible="false">
+                     <children>
+                        <TextField fx:id="tokentextfield" layoutX="270.0" layoutY="5.0" prefHeight="35.0" prefWidth="190.0" promptText="Enter Token" />
+                        <DatePicker fx:id="checkoutdatepicker" layoutX="79.0" layoutY="210.0" prefHeight="35.0" prefWidth="190.0" promptText="Enter Checkout Date" />
+                        <TextField fx:id="checkouttime" layoutX="460.0" layoutY="210.0" prefHeight="35.0" prefWidth="190.0" promptText="Enter CheckOut Time" />
+                        <Button fx:id="btncheckout" layoutX="327.0" layoutY="245.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="38.0" prefWidth="75.0" text="CheckOut" />
+                        <Button fx:id="tokensearch" layoutX="415.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="35.0" prefWidth="60.0" text="Search" />
+                        <TableView fx:id="tblData2" layoutX="-2.0" layoutY="65.0" prefHeight="133.0" prefWidth="730.0" stylesheets="@../styling/fullpackstyling.css">
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children></Pane>
+            <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="labeladdplace" alignment="TOP_CENTER" layoutX="322.0" layoutY="27.0" prefHeight="35.0" prefWidth="134.0" text="Add Place" textFill="#3bcf16" visible="false">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="panee" layoutX="42.0" layoutY="157.0" prefHeight="246.0" prefWidth="738.0" visible="false">
+                     <children>
+                        <TextField fx:id="txtplaceid" layoutX="274.0" layoutY="14.0" prefHeight="35.0" prefWidth="190.0" promptText="Enter PlaceId" />
+                        <TextField fx:id="txtplacename" layoutX="274.0" layoutY="57.0" prefHeight="38.0" prefWidth="190.0" promptText="Enter Place Name" />
+                        <TextField fx:id="totalslots" layoutX="274.0" layoutY="105.0" prefHeight="40.0" prefWidth="190.0" promptText="Enter Number of Slots" />
+                        <Button fx:id="btnaddplace" layoutX="340.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="38.0" prefWidth="58.0" text="Add" />
+                     </children>
+                  </AnchorPane>
+               </children></Pane>
+            <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0" style="-fx-background-color: #F50057;">
+               <children>
+                  <TextField layoutX="590.0" layoutY="47.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: #02030A; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+                  <Label layoutX="57.0" layoutY="25.0" text="Slot Status" textFill="#e7e5e5">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="72.0" prefHeight="92.0" prefWidth="661.0" spacing="50.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="labtotalslot" text="0" textFill="#2a73ff">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Total Slots" textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="laboccupied" text="0" textFill="#26bfbc">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Occupuied" textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="labvacant" text="0" textFill="#fa5f7e">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Vacant" textFill="#e7e5e5" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="btuppd" mnemonicParsing="false" onAction="#handleClicks" prefHeight="30.0" prefWidth="62.0" styleClass="corner" text="Update" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="749.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images2/icons8_Search_52px.png" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="tblData" layoutX="35.0" layoutY="164.0" prefHeight="308.0" prefWidth="723.0" stylesheets="@../styling/fullpackstyling.css">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Button fx:id="btnupdate" layoutX="300.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="35.0" prefWidth="75.0" text="Update" />
+                  <Button fx:id="btnrefresh" layoutX="462.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="35.0" prefWidth="75.0" text="Clear" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+   <effect>
+      <DropShadow color="#1b1eeb" />
+   </effect>
+</AnchorPane>
