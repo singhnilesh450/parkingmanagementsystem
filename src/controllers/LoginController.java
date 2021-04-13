@@ -42,7 +42,6 @@ public class LoginController implements Initializable {
 
     @FXML
     private Button btnSignin;
-
     /// -- 
     Connection con = null;
     PreparedStatement preparedStatement = null;
@@ -72,7 +71,6 @@ public class LoginController implements Initializable {
             }
         }
     }
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
