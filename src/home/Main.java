@@ -40,8 +40,7 @@ public class Main extends Application {
             }
         });
 
-        //sorry about that - Windows defender issue.
-        //move around here
+
         root.setOnMouseDragged(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
